@@ -1,5 +1,5 @@
 # risk-tools  
-Common risk metrics
+common risk metrics
 
 
 ## dependencies
@@ -86,9 +86,6 @@ Modigliani ratio - combination of the Sharpe and info ratios
 expected excess returns of a benchmark portfolio, above the risk free rate
 
 
-## measures of risk-adjusted return based on value at risk
-
-
 ### excess_var(er, returns, rf, alpha) ->
 excess return on value at risk discounts the excess return of the portfolio above
 the risk-free rate by the value at risk of the portfolio
@@ -126,8 +123,6 @@ downside risk
 discounts first order higher partial moment of a portfolio's returns, upside potential,
 by the second-order lower partial moment of a portfolio's returns, downside variation
 
-
-## drawdown risk based measures
 
 ### calmar_ratio(er, returns, rf) ->
 discounts expected excess return of a portfolio by the 
