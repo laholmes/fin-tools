@@ -2,11 +2,11 @@ import numpy as np
 import numpy.random as nrand
 
 
-def vol(returns):
+def vol(returns) -> float:
     return np.std(returns)
 
 
-def beta(returns, market):
+def beta(returns, market) -> float:
     m = np.matrix([returns, market])
     return np.cov(m)[0][1] / np.std(market)
 
