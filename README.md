@@ -12,12 +12,6 @@ numpy
 ### vol(returns) -> float
 standard deviation of returns
 
-r = rnand.uniform(-1, 1, 50)
-m = nrand.uniform(-1, 1, 50)
-
-print('vol=', vol(r))
-print('beta=', beta(r, m))
-
 
 ### beta(returns, market) -> float
 beta of returns
@@ -25,30 +19,14 @@ beta of returns
 ### var(returns, alpha) -> float
 historical var of returns (takes t historical returns, orders them, and takes the loss at the point in the list which corresponds to alpha)
 
-r = nrand.uniform(-1, 1, 50)
-print('var(0.05) = ', var(r, 0.05))
-
 
 ### cvar(returns, alpha) -> float
-print('cvar(0.05) = ', cvar(r, 0.05))
-
+conditional var of returns
 
 ### lower_partial_moment(returns, threshold, order) -> float
-measures of risk-adjusted return based on vol treat all deviations from the mean as risk
-
-whereas measures of risk-adjusted return based on lower partial moments 
-consider only deviations below some predefined minimum return threshold, t as risk
-i.e. positive deviations aren't risky
-
-r = nrand.uniform(-1,1,50)
-print('hpm(0.0)_1 = ', hpm(r, 0.0, 1))
-print('lpm(0.0)_1 = ', lpm(r, 0.0, 1))
-
+measures of risk-adjusted return based on vol treat all deviations from the mean as risk, whereas measures of risk-adjusted return based on lower partial moments consider only deviations below some predefined minimum return threshold, t as risk
 
 ### higher_partial_moment(returns, threshold, order) -> float
-r = nrand.uniform(-1,1,50)
-print('hpm(0.0)_1 = ', hpm(r, 0.0, 1))
-print('lpm(0.0)_1 = ', lpm(r, 0.0, 1))
 
 
 ### drawdown(returns, tau) -> float
