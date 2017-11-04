@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='risk-tools',
     packages=['risk-tools'],
-    version='0.1.01',
+    version='0.1.03',
     description='risk management metrics library',
     url='https://github.com/laholmes/risk-tools',
     author='laurence holmes',

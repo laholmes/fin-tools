@@ -63,7 +63,7 @@ excess return on value at risk discounts the excess return of the portfolio abov
 
 
 ### conditional_sharpe_ratio(er, returns, rf, alpha) -> float
-conditional sharpe ratio - discounts the excess return of the portfolio above the risk-free rate by the conditional VaR of the portfolio
+discounts the excess return of the portfolio above the risk-free rate by the conditional VaR of the portfolio
 
 
 ### omega_ratio(er, returns, rf, target=0) -> float

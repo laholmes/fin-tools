@@ -125,32 +125,32 @@ def conditional_sharpe_ratio(er, returns, rf, alpha):
 
 
 def omega_ratio(er, returns, rf, target=0):
-    return (er - rf) / lpm(returns, target, 1)
+    return (er - rf) / lower_partial_moment(returns, target, 1)
 
 
 def sortino_ratio(er, returns, rf, target=0):
-    return (er -rf) / math.sqrt(lpm(returns, target, 2))
+    return (er -rf) / math.sqrt(lower_partial_moment(returns, target, 2))
 
 
 def kappa_three_ratio(er, returns, rf, target=0):
-    return (er - rf) / math.pow(lpm(returns, target, 3), float(1/3))
+    return (er - rf) / math.pow(lower_partial_moment(returns, target, 3), float(1/3))
 
 
 def gain_loss_ratio(returns, target=0):
-    return hpm(returns, target, 1) / lpm(returns, target, 1)
+    return higher_partial_moment(returns, target, 1) / lpm(returns, target, 1)
 
 
 def upside_potential_ratio(returns, target=0):
-    return hpm(returns, target, 1) / math.sqrt(lpm(returns, target, 2))
+    return higher_partial_moment(returns, target, 1) / math.sqrt(lpm(returns, target, 2))
 
 
 def calmar_ratio(er, returns, rf):
-    return (er-rf) / max_dd(returns)
+    return (er-rf) / max_drwadown(returns)
 
 
 def sterling_ratio(er, returns, rf, periods):
-    return (er - ef) / average_dd(returns, periods)
+    return (er - ef) / average_drawdown(returns, periods)
 
 
 def burke_ratio(er, returns, rf, periods)
-    return (er - ef) / math.sqrt(average_dd_squared(returns, periods))
+    return (er - ef) / math.sqrt(average_drawdown_squared(returns, periods))
