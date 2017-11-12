@@ -110,3 +110,14 @@ discounts the expected excess return of a portfolio by the average of the N wors
 
 #### burke_ratio(er, returns, rf, periods) -> float
 similar to sterling, but less sensitive to outliers discounts the expected excess return of a portfolio by the square root of the average of the N worst expected maximum drawdowns for that portfolio
+
+### Mortgage
+
+#### amortization_table(loan_amount: float, rate: float, monthly_payment: float) --> float
+
+takes an initial loan amount, a fixed rate, and monthly payment, and returns
+the amortization table for the loan, showing monthly capital and interest repayment.
+term is calculated based on period required to fully amortize the loan.
+
+Assume monthly compounding, payments made at end of month i.e. interest accrues in period, followed by
+monthly payment to cancel interest and reduce outstanding capital.
