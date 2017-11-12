@@ -18,7 +18,7 @@ Installation
 pip install fin-tools
 ```
 
-## dependencies
+## Dependencies
 
 fin-tools requires:
 
@@ -61,7 +61,7 @@ measures of risk-adjusted return based on vol treat all deviations from the mean
 #### drawdown(returns, tau) -> float
 maximum decrease in the value of the portfolio over a specific period of time
 
-#### #max_drawdown(returns) -> float
+#### max_drawdown(returns) -> float
 
 #### average_drawdown(returns, periods) -> float
 
