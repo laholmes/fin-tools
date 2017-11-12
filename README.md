@@ -6,7 +6,7 @@
 
 Overview
 --------
-common tools used in finance - risk, pricing, etc
+Common tools used in finance - risk, pricing, etc
 
 pypi registry - https://pypi.python.org/pypi/fin-tools
 
