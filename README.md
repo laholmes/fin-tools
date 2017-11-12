@@ -113,7 +113,7 @@ similar to sterling, but less sensitive to outliers discounts the expected exces
 
 ### Mortgage
 
-#### amortization_table(loan_amount: float, rate: float, monthly_payment: float) --> float
+#### amortization_table(loan_amount: float, rate: float, monthly_payment: float) -> float
 
 takes an initial loan amount, a fixed rate, and monthly payment, and returns
 the amortization table for the loan, showing monthly capital and interest repayment.
