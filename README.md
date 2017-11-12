@@ -22,7 +22,7 @@ pip install fin-tools
 
 fin-tools requires:
 
-numpy==1.12.1 or later
+numpy==1.12.1 or later .  
 pandas==0.19.2 or later
 
 
