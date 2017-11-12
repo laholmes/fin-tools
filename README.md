@@ -31,11 +31,11 @@ pandas==0.19.2 or later
 ### Pricing
 
 #### cds(n, d, p, R, N) -> float
-n - number of periods
-d - constant discount factor
-p - prob default
-R - recovery rate
-N - notional
+n - number of periods  
+d - constant discount factor   
+p - prob default  
+R - recovery rate  
+N - notional  
 
 returns price of CDS using probability tree model
 
