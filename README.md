@@ -39,9 +39,9 @@ N - notional
 
 returns price of CDS using probability tree model
 
-## Risk 
+### Risk 
 
-vol(returns) -> float
+#### vol(returns) -> float
 standard deviation of returns
 
 
