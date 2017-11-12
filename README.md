@@ -1,9 +1,9 @@
-# risk-tools  
+# fin-tools  
 <a href="https://badge.fury.io/py/risk-tools"><img src="https://badge.fury.io/py/risk-tools.svg" alt="PyPI version" height="18"></a>
 [![Twitter](https://img.shields.io/twitter/url/https/pypi.python.org/pypi/risk-tools.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fpypi.python.org%2Fpypi%2Frisk-tools)
 
 ## overview
-common risk metrics
+common tools used in finance - risk, pricing, etc
 
 
 ## dependencies
@@ -12,6 +12,19 @@ numpy
 
 
 ## API
+
+## Pricing
+
+### cds(n, d, p, R, N) -> float
+n - number of periods
+d - constant discount factor
+p - prob default
+R - recovery rate
+N - notional
+
+returns price of CDS using probability tree model
+
+## Risk 
 
 ### vol(returns) -> float
 standard deviation of returns
