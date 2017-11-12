@@ -1,5 +1,6 @@
 # risk-tools  
 <a href="https://badge.fury.io/py/risk-tools"><img src="https://badge.fury.io/py/risk-tools.svg" alt="PyPI version" height="18"></a>
+[![Twitter](https://img.shields.io/twitter/url/https/pypi.python.org/pypi/risk-tools.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fpypi.python.org%2Fpypi%2Frisk-tools)
 
 ## overview
 common risk metrics
