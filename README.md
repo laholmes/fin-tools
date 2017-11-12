@@ -1,4 +1,5 @@
 # risk-tools  
+<a href="https://badge.fury.io/py/risk-tools"><img src="https://badge.fury.io/py/risk-tools.svg" alt="PyPI version" height="18"></a>
 common risk metrics
 
 
