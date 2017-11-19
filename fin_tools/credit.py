@@ -36,7 +36,7 @@ class cds():
             return np.sum([
                 np.power(1-self.default_probabilities[0], period) * 
                 self.default_probabilities[0] * 
-                (self.notional * (1 - self.recovery_rate) * self.discount_factors [0]- (self.notional * self.issue_premium * self.period)/self.coupon_frequency)
+                (self.notional * (1 - self.recovery_rate) * self.discount_factors [0]- (self.notional * self.issue_premium * period)/self.coupon_frequency)
                 for period in range(self.num_periods)
             ]) - no_default
 
