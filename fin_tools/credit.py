@@ -3,8 +3,8 @@ import numpy as np
 
 class cds():
     def __init__(self, num_periods: int, 
-        discount_factors: float, 
-        default_probabilities: float, 
+        discount_factors: List[float], 
+        default_probabilities: List[float], 
         recovery_rate: float, 
         notional: float, 
         coupon_frequency: float, 
