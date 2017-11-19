@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='fin-tools',
     packages=['fin_tools'],
-    version='0.1.04',
+    version='0.1.8',
     description='common financial tools for risk and pricing',
     url='https://github.com/laholmes/fin-tools',
     author='laurence holmes',

@@ -1,10 +1,10 @@
 import unittest
-from fin_tools.pricing import cds, cds_variable
+import fin_tools.credit
 
-class TestPricing(unittest.TestCase):
+class TestCredit(unittest.TestCase):
 
     def test_cds(self):
-        cd = cds(3, [1/1.1], [0.1], 0.75, 1000, 4, 0.1)
+        cd = credit.cds(3, [1/1.1], [0.1], 0.75, 1000, 4, 0.1)
         calculated_price = cd.get_price()
         actual_price = 5.59
         self.assertAlmostEqual(calculated_price, actual_price, places=2)

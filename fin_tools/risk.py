@@ -152,5 +152,5 @@ def sterling_ratio(er, returns, rf, periods):
     return (er - ef) / average_drawdown(returns, periods)
 
 
-def burke_ratio(er, returns, rf, periods)
+def burke_ratio(er, returns, rf, periods):
     return (er - ef) / math.sqrt(average_drawdown_squared(returns, periods))

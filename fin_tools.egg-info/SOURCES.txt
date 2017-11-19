@@ -1,10 +1,12 @@
+README.md
 setup.cfg
 setup.py
 fin_tools/__init__.py
-fin_tools/cds.py
+fin_tools/credit.py
 fin_tools/mortgage.py
 fin_tools/risk.py
 fin_tools.egg-info/PKG-INFO
 fin_tools.egg-info/SOURCES.txt
 fin_tools.egg-info/dependency_links.txt
 fin_tools.egg-info/top_level.txt
+test/test_credit.py
