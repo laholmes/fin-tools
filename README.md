@@ -32,7 +32,7 @@ pandas==0.19.2 or later
 
 #### class cds(num_periods: int, discount_factors: List[float], default_probabilities: float, recovery_rate: float, notional: float, coupon_frequency: float, issue_premium: float)
 
-cds.get_price()
+cds.get_price()  
 returns price of CDS using probability tree model. if a list length 1 is passed for discount_factors and default_probabilities, price is computed using these values as the fixed discount factor and default probability for each period up to num_periods. Otherwise, these parameters should be lists of length num_periods
 
 ### Risk 
